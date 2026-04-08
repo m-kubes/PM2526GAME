@@ -13,10 +13,11 @@
 .dialogue-box {
     position: fixed;
     left: 50%;
-    bottom: 1rem;
-    display: flex;
+    bottom: -100%;
+    display: none;
     flex-direction: row;
     transform: translate(-50%, 0);
+    transition: bottom 1s ease-in-out;
 }
 .dialogue-box .portrait {
     width: 15rem;
