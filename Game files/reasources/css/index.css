@@ -1,0 +1,143 @@
+body{
+    display: flex;
+  font-family: "IM Fell English SC", Georgia, serif;
+  background-color: #f6e1b5;
+  height: 100vh;
+  width: 100vw;
+}
+#shop_container{
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "IM Fell English SC", Georgia, serif;
+  background-color: #f6e1b5;
+  height: 100%;
+  width: 100%;
+}
+#top {
+  width: 100%;
+  height: 35%;
+  display: flex;
+}
+
+.im-fell-english-sc-regular {
+  font-family: "IM Fell English SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+  font-family: "IM Fell English SC";
+  color: #3e3f40;
+}
+h2 {
+  font-family: "IM Fell English SC";
+  color: #3e3f40;
+}
+p {
+    font-family: "IM Fell English SC";
+  color: #3e3f40;
+}
+
+#first_section {
+  height: 100%;
+  width: 25%;
+}
+
+#first_section button {
+  height: 27%;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 5%;
+  color: #3e3f40;
+  background-color: #936535;
+  cursor: pointer;
+}
+
+
+
+#second_section {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  justify-items: center;
+}
+
+#second_section img{
+  width: 100%;
+  height: 100%;
+}
+
+#shop{
+  position: absolute;
+  top: 1%;
+  left: 45%;
+ 
+  opacity: 0.75;
+}
+
+#money{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  top: 1%;
+  left: 70%;
+   background-color: #d9c22e;
+  border-radius: 30%;
+  height: 5%;
+  width: 5%;
+  opacity: 0.75;
+}
+
+
+#third_section {
+  height: 100%;
+  width: 25%;
+}
+
+#third_section button {
+  height: 27%;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 5%;
+  color: #3e3f40;
+  background-color: #936535;
+  cursor: pointer;
+}
+
+#bottom {
+  width: 100%;
+  height:65%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.slot{
+  width: 17%;
+  height: auto;
+  aspect-ratio: 1/1;
+  border: 1px solid #3e3f40;
+  overflow: hidden;
+  align-self: start;
+  background-color: #936535;
+}
+
+#first_section button:hover {
+  background-color: #d9c22e;
+  cursor: pointer;
+}
+
+#third_section button:hover {
+  background-color: #d9c22e;
+  cursor: pointer;
+}
+
+
+#first_section button:active {
+  box-shadow: 2px 2px 5px #3e3f40;
+}
+
+#third_section button:active {
+  box-shadow: 2px 2px 5px #3e3f40;
+}
