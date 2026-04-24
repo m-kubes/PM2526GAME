@@ -2,7 +2,7 @@ let schizophrenia_level = 0;
 
 function increase_schizophrenia(inc_amount){
     schizophrenia_level += inc_amount;
-    console.log(`your schizophrenia level has increased by ${amount}.`);
+    console.log(`your schizophrenia level has increased by ${inc_amount}.`);
     status_check();
 }
 
