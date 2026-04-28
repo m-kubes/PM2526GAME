@@ -32,17 +32,17 @@ body {
 }
 
 h1 {
-  font-family: "IM Fell English SC";
+  font-family: "IM Fell English SC", Georgia, serif;
   color: #3e3f40;
 }
 
 h2 {
-  font-family: "IM Fell English SC";
+  font-family: "IM Fell English SC", Georgia, serif;
   color: #3e3f40;
 }
 
 p {
-  font-family: "IM Fell English SC";
+  font-family: "IM Fell English SC", Georgia, serif;
   color: #3e3f40;
 }
 
@@ -183,6 +183,7 @@ p {
 }
 
 #payout {
+  background-color: #d9c22e;
   height: 95%;
   width: 20%;
   border: 12px double #3e3f40;
@@ -230,6 +231,26 @@ p {
   margin-right: 1%;
 }
 
+#wins1 {
+  background-color: #c39c55;
+}
+
+#wins2 {
+  background-color: #c39c55;
+}
+
+#wins3 {
+  background-color: #80acaa;
+}
+
+#wins4 {
+  background-color: #80acaa;
+}
+
+#wins5 {
+  background-color: #549584;
+}
+
 #spinners {
   height: 100%;
   width: 79%;
@@ -252,6 +273,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #F6EB61;
 }
 
 .images {
@@ -262,14 +284,17 @@ p {
 
 #won {
   border: 5px solid #3e3f40;
+  background-color: #549584;
 }
 
 #won1 {
   border: 5px solid #3e3f40;
+  background-color: #549584;
 }
 
 #won2 {
   border: 5px solid #3e3f40;
+  background-color: #549584;
 }
 
 #controls {
@@ -295,12 +320,13 @@ p {
 
 #control_buttons {
   display: flex;
-  border: 1px solid #3e3f40;
   width: 100%;
   height: 59%;
   justify-content: space-between;
   align-items: center;
-
+  box-sizing: border-box;
+  background-color:  #3e3f40;
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.4);
 }
 
 #control_buttons button {
@@ -329,6 +355,8 @@ p {
 }
 
 #play {
+  background-color: #549584;
+  ;
   border: 1px solid #3e3f40;
   width: 24%;
   height: 100%;
@@ -338,11 +366,11 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #d9c22e;
+  background-color: #FF0000;
   width: 60%;
   height: 70%;
   border-radius: 100%;
-  opacity: 0.75;
+  opacity: 0.95;
   margin-left: 20%;
   margin-top: 10%;
 }
