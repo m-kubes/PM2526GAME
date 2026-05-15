@@ -245,7 +245,8 @@ class Dialogue {
                     if (choice !== undefined && dialogue.options[choice].response) {
                         await this.reveal_text(dialogue.options[choice].response, text_speed, [], 0); 
                     }
-
+                    
+                    // change character stats if there is a stats impact for the chosen option
                     if (choice !== undefined && dialogue.options[choice].stats_impact) {
                         let keys = Object.keys(dialogue.options[choice].stats_impact);
                         let values = Object.values(dialogue.options[choice].stats_impact);
@@ -291,5 +292,6 @@ export {
     // - "prompt" - text the other dialogue says that is revealed in the dialogue box
     // - "options" - array of options the player can choose from
     //               (each with "text" and a required "response" that is revealed when the option is chosen)
+    // - "stats_impact" - an object with keys as stats and values as the amount to change the stat by when the option is chosen
 
 // dialogue json format example is in dialogue/template_yahu_dialogue.json
