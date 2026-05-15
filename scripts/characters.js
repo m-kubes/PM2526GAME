@@ -48,6 +48,19 @@ class CharacterContainer {
             }
         
             const data = await response.json();
+            
+            Object.defineProperty(data, "love", {
+                set(value) {
+                    if (typeof value === "number") {
+                        this._love = value;
+
+                        document.dispatchEvent(new CustomEvent(`${this.name}_love`, {
+                            detail: { value: this._love },
+                            bubbles: true
+                        }));
+                    }
+                }
+            });
 
             data.love = 0
             
