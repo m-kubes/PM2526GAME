@@ -1,0 +1,53 @@
+{
+    "1": {
+        "prompt": "*Mr. Politics drives into your store with his limo, creating a huge hole in the wall. He then rolls down the window, wearing sunglasses.*"
+    },
+    "2": {
+        "prompt": "Good evening, my fellow citizen. As you have been able to tell, people everywhere have been struggling just to financially make ends meet, and trust me, I’ve been through the wringer too… It’s just so stressful being in this economy, could you give me a calming potion so I can take my mind off it? Not like it’s worth thinking about anyways, nothing I can do about the economy.",
+        "options": [
+            {
+                "text": "Of course sir Politics!",
+                "playertext": "Yes of course Mr. Politics! I can only imagine how difficult it has been to just stay afloat with prices being the way they are. People ought to be spending their money on necessities instead of useless junk like video games. By the way, nice limo!",
+                "response": "Yeah… It’s been rough, especially gas prices… But yeah my limo IS pretty rad and patriotic, isn’t it? I just hope the calming potion will be able to take my mind off the recession…",
+                "stats_impact": {
+                    "gambling_anxiety": 1
+                },
+                "character_love_impact": {
+                    "john_b_politics": 5
+                }
+            },
+            {
+                "text": "We're out",
+                "response": "Oh my goodness… I’ll never be able to stop stressing about affording my basic necessities now… How could you do this to me??? Do you not see the working man (me) struggling from that high horse of yours?",
+                "stats_impact": {
+                    "gambling_anxiety": 0
+                },
+                "character_love_impact": {
+                    "john_b_politics": -5
+                }
+            },
+            {
+                "text": "No problem!",
+                "playertext": "Yeah I’ll get the potion, but how’d you afford the limo?",
+                "response": "Ok yeah sweet, uh, well, the limo came from my own bank account, actually. I just thought it would be a nice reward after spending 3 hours using my elite ball knowledge to trade stocks (slang for insider trading), you gotta prioritize yourself sometimes with things the way they are, you should try it sometime!",
+                "stats_impact": {
+                    "gambling_anxiety": 0
+                },
+                "character_love_impact": {
+                    "john_b_politics": 8
+                }
+            },
+            {
+                "text": "We’re out, but how’d you afford the limo?",
+                "response": " How could you do this to me??? Do you not see the working man struggling from that high horse of yours? But anyways, the limo came from my own bank account, actually. I just thought it would be a nice reward after spending 3 hours using my elite ball knowledge to trade stocks (slang for insider trading), you gotta prioritize yourself sometimes with things the way they are, you should try it sometime! Peasant.",
+                "stats_impact": {
+                    "gambling_anxiety": 0
+                },
+                "character_love_impact": {
+                    "john_b_politics": -1
+                }
+            }
+
+        ]
+    }
+}
