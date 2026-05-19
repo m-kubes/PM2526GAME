@@ -1,0 +1,30 @@
+{
+    "1": {
+        "prompt": "Why do you keep teasing me like this? You know these levels of customer satisfaction… Please me, don’t you? I am THIS close to just forcing you into marriage so you can be my loyal employee for the rest of my life, THIS close. ",
+        "options": [
+            {
+                "text": "*Just stare*",
+                "response": "What’s with that look? Don’t you want to be with me forever? Well no matter the case, it isn’t up to you if you keep running this operation so damn well.",
+                "stats_impact": {
+                    "gambling_anxiety": -1
+                },
+                "character_love_impact": {
+                    "Benjamin Netanyahu": 0
+                }
+            },
+            {
+                "text": "Never!",
+                "response": "What’s up with you?! Don’t you want to be with me forever? Well no matter the case, it isn’t up to you if you keep running this operation so well.",
+                "stats_impact": {
+                    "gambling_anxiety": 0
+                },
+                "character_love_impact": {
+                    "Benjamin Netanyahu": -2
+                }
+            }
+        ]
+    },
+    "2": {
+        "prompt": "Now get back to selling those sweet, sweet potions Kronky-poo!"
+    }
+}

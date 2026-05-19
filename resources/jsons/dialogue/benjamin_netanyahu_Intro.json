@@ -1,0 +1,25 @@
+{
+    "1": {   
+        "prompt": "Ah, good afternoon my favorite employee! I’ll be giving you four days to test out the potion selling operation you suggested to me. Are you ready to make some deliciously epicly crazy potions?",
+        "options": [
+            {
+                "text": "No",
+                "response": "Haha! I don’t really care, you’re gonna make me potions.",
+                "stats_impact": {
+                    "gambling_anxiety": -5
+                },
+                "character_love_impact": {
+                    "Benjamin Netanyahu": -5
+                }
+            },
+            {
+                "text": "Of course!",
+                "response": "That’s the spirit champ! Get at ‘em!"
+                
+            }
+        ]
+    },
+    "2": {
+        "prompt": "Anyway, I have to go now. See you later!  And remember, make those potions real good for me, or else..."
+    }
+}

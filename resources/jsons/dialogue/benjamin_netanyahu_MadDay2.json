@@ -1,0 +1,30 @@
+{
+    "1": {
+        "prompt": "Never in my 76 years of exploiting employees have I ever seen someone so horrendous at their job as you. You genuinely need to just lock in. Get on the grindset. Let out your demons. Whatever you have to do just DO IT so we can at least turn somewhat of a profit from this operation! I’d really prefer to keep them for something less simple, but I will be left with no other choice but to blow you up if you don’t co-operate.",
+        "options": [
+            {
+                "text": "I'll do better",
+                "response": "Yes, you will, or there will be no more “you” left to do better with.",
+                "stats_impact": {
+                    "gambling_anxiety": -5
+                },
+                "character_love_impact": {
+                    "Benjamin Netanyahu": 0
+                }
+            },
+            {
+                "text": "*eye-roll*",
+                "response": "I can’t take offense knowing that those eyes will be pulverized in due time. That is unless you turn your behavior around, of course.",
+                "stats_impact": {
+                    "gambling_anxiety": -9
+                },
+                "character_love_impact": {
+                    "Benjamin Netanyahu": -3
+                }
+            }
+        ]
+    },
+    "2": {
+        "prompt": "Now get to work. Do not dissapoint me any more."
+    }
+}

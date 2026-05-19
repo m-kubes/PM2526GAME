@@ -1,0 +1,21 @@
+{
+    "1": {
+        "prompt": "Well, you seem to have a handle on what you’re doing by now. I suppose I’ll just leave it to you to figure out what to do next, then.",
+        "options": [
+            {
+                "text": "Thanks",
+                "response": "Mhm, yeah, just keep doing stuff that makes money I guess."
+            },
+            {
+                "text": "You’re a vile human",
+                "response": "Yeah, but what does it matter, anywho? I have you to make money, not to spew your opinions.",
+                "stats_impact": {
+                    "gambling_anxiety": -2
+                },
+                "character_love_impact": {
+                    "Benjamin Netanyahu": -2
+                }
+            }
+        ]
+    }
+}

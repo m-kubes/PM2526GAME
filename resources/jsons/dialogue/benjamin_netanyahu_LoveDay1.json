@@ -1,0 +1,21 @@
+{
+    "1": {
+        "prompt": "You know, uh. I’ve never really had an employee like you before. It's a really… Different experience to what I’m used to. Usually my wage slaves are too bitter towards me for giving them a job or whatever stuff poor people get mad at, to put in real work. You’re different. You’re beautiful. You’re my dream. Keep this up by the end of the week and I might have to lock you into an involuntary marriage for the rest of your life… Only kidding, of course, well not really. ",
+        "options": [
+            {
+                "text": "Ok.",
+                "response": "Ah, a good employee knows their place. I see you do as well. Keep working hard!"
+            },
+            {
+                "text": "Creep...",
+                "response": "I’m under investigation for war crimes. Do you really think I care if I’m a creep? Well I do… Because it’s coming from you… I’m going to my office to sob. DNI.",
+                "stats_impact": {
+                    "gambling_anxiety": -2
+                },
+                "character_love_impact": {
+                    "Benjamin Netanyahu": -5
+                }
+            }
+        ]
+    }
+}

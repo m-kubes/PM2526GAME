@@ -1,0 +1,27 @@
+{
+    "1": {
+        "prompt": "Oh my goodness. You are just so perfect. Everything you’ve done. Everything you are. I’ve never had a business with so many satisfied customers! Keep it up and I'll never let you go, ever! It’d just be a horrible business decision to NOT keep you here forever.",
+        "options": [
+            {
+                "text": "Ok, Bro.",
+                "response": "Yes yes, I appreciate the acknowledgement. Now keep doing your job, I almost have enough to afford the Labubu matcha dubai chocolate rolex!",
+                "stats_impact": {
+                    "gambling_anxiety": 3
+                },
+                "character_love_impact": {
+                    "Benjamin Netanyahu": 4
+                }
+            },
+            {
+                "text": "I don't like you.",
+                "response": "This isn’t about if you like me though, is it? You’re like an ant to me, be grateful I share any compassion with you.",
+                "stats_impact": {
+                    "gambling_anxiety": -1
+                },
+                "character_love_impact": {
+                    "Benjamin Netanyahu": -2
+                }
+            }
+        ]
+    }
+}

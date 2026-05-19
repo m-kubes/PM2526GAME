@@ -1,0 +1,27 @@
+{
+    "1": {
+        "prompt": "I’m going to be frank with you. I am just itching to press the “bomb defunct employee” button on my desk. You are on THIN ice here, the operation is completely failing and it's all YOUR fault.",
+        "options": [
+            {
+                "text": "I'll try!",
+                "response": "All the trying in the world may not even be enough, at this rate.",
+                "stats_impact": {
+                    "gambling_anxiety": -2
+                },
+                "character_love_impact": {
+                    "Benjamin Netanyahu": 0
+                }
+            },
+            {
+                "text": "Whatever",
+                "response": "There’s no point in trying to get through to you anyways… Just turn the operation around, I’m nearly out of patience.",
+                "stats_impact": {
+                    "gambling_anxiety": -2
+                },
+                "character_love_impact": {
+                    "Benjamin Netanyahu": -2
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "1": {
+        "prompt":" Another day of profit I see? You’re doing well, keep it up. Regrettably, you are not doing as well as you could be, but that may be for the better. I just can’t control myself when an employee does their job with such grace…",
+        "options": [
+            {
+                "text": "Thanks",
+                "response": "Ah, of course. Keep pumping out that revenue!",
+                "stats_impact": {
+                    "gambling_anxiety": 1
+                },
+                "character_love_impact": {
+                    "Benjamin Netanyahu": 2
+                }
+            },
+            {
+                "text": "I'm tired.",
+                "response": "Well that’s not what I hired you to be. If you can find a job that lets you slack around and nap all day then feel free to file for a position. Oh, wait, the contract doesn’t let you do that, silly me! Now get to work.",
+                "stats_impact": {
+                    "gambling_anxiety": -1
+                },
+                "character_love_impact": {
+                    "Benjamin Netanyahu": -1
+                }
+            }
+        ]
+    }
+}

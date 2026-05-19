@@ -1,0 +1,30 @@
+{
+    "1": {
+        "prompt": "Yahu: Good evening, my favorite Likudling! Seems things are going alright as is. Just make sure you don’t let our customers down too much… By the way, have I ever told you the way I feel about really efficient employees? Oh, efficient employees… Oh man… Those are HOT! When I see an employee who’s really really good at their job, I really wanna just force them into marriage!",
+        "options": [
+            {
+                "text": "Thanks?",
+                "response": "Aha, yes, anytime… Any. Time.",
+                "stats_impact": {
+                    "gambling_anxiety": 1
+                },
+                "character_love_impact": {
+                    "Benjamin Netanyahu": 2
+                }
+            },
+            {
+                "text": "Creep...",
+                "response": "I’m under investigation for war crimes. Do you really think I care if I’m a creep? Do your job.",
+                "stats_impact": {
+                    "gambling_anxiety": -1
+                },
+                "character_love_impact": {
+                    "Benjamin Netanyahu": -1
+                }
+            }
+        ]
+    },
+    "2": {
+        "prompt": "Welp, that's all! Head back to work and keep up the good job!"
+    }
+}
