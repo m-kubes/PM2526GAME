@@ -7,15 +7,36 @@
         "options": [
             {
                 "text": "Sir yes sir!",
-                "response": "Ah, I knew I could count on you! Now that I have this, there’s nothing in my way to stop me from becoming the Prime Minister after everyone collectively sees how I’m clearly the most fit to lead by how high I can jump!"
+                "playertext": " Aye! Sir yes sir! One patriotic leaping potion coming up!",
+                "response": "Ah, I knew I could count on you! Now that I have this, there’s nothing in my way to stop me from becoming the Prime Minister after everyone collectively sees how I’m clearly the most fit to lead by how high I can jump!",
+                "stats_impact": {
+                    "gambling_anxiety": 1
+                },
+                "character_love_impact": {
+                    "john_b_politics": 8
+                }
             },
             {
                 "text": "I’m not letting our tax dollars go to this",
-                "response": "If you just hate our country then say it already, do you have any idea how important this is to our national security, how important this is to working class families? Just, wow."
+                "playertext": "Ok… Ok, WHY on Earth are our tax dollars going to you buying an illegal potion so you can do a cool party trick in parliament??? I really thought better of you… Politics…",
+                "response": "If you just hate our country then say it already, do you have any idea how important this is to our national security, how important this is to working class families? Just, wow.",
+                "stats_impact": {
+                    "gambling_anxiety": -2
+                },
+                "character_love_impact": {
+                    "john_b_politics": -8
+                }
             },
             {
                 "text": "We don’t have any",
-                "response": "Oh my goshhhhhhh you RUINED it! I was gonna jump like really high and the Prime Minister was gonna be all like “Oh my gosh Mr. Politics, that was so awesome! I’ll step down immediately and endorse you in the leadership election to replace me! I can’t believe we never thought about doing this until now, you’re a GENIUS!” But you RUINED IT, ughhhh… Consider me GONE!"
+                "playertext": "*You break down in tears* I- I’m so sorry Mr. Politics, but we don’t have any leaping potions… Oh gosh… I’ve let you down, I’ve let the COUNTRY down… I’ve let FREEDOM down...",
+                "response": "Oh my goshhhhhhh you RUINED it! I was gonna jump like really high and the Prime Minister was gonna be all like “Oh my gosh Mr. Politics, that was so awesome! I’ll step down immediately and endorse you in the leadership election to replace me! I can’t believe we never thought about doing this until now, you’re a GENIUS!” But you RUINED IT, ughhhh… Consider me GONE!",
+                "stats_impact": {
+                    "gambling_anxiety": -3
+                },
+                "character_love_impact": {
+                    "john_b_politics": -10
+                }
             }
         ]
     }
