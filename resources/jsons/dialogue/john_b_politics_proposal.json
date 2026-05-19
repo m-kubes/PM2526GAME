@@ -1,0 +1,20 @@
+{
+    "1": {
+        "prompt": "*John B. Politics does a tactical roll through the window and throws a bouquet of flowers at your face.*"
+    },
+    "2": {
+        "prompt": "I learned THAT in the war of 1812, heh. Well anyways… I’ve been thinking about this for a while, but you make my cold, stone, heart flutter, even if it’s too hard and dense to fly, or anything. It’s literally a rock by the way, my heart has been medically proven to be a rock. But I simply cannot imagine living without you… You’re just so wonderful and cool that I’ve quit my addiction of throwing rocks at ducks in the public park, out of kindness that you’ve taught me. Will you marry me, Kronk?",
+        "options": [
+            {
+                "text": "Yes",
+                "playertext": "Oh my goodness! Of course John B. Politics! It’d be an honor to live the rest of my life with an old corrupt career politician!",
+                "response": "Oh, gee wilikers! I feel like a spring chicken! I haven’t had a date since 1793! I’ll cherish you for the rest of my public career, until I remarry! Now come on with me to live in outer space on my cool giant laser spaceship funded by taxpayer revenue!"
+            },
+            {
+                "text": "no",
+                "playertext": "Oh… I’m flattered, but I see you more as my local elected representative.",
+                "response": "*Politics looks at you with a small tear forming in his left eye* Oh, well… If that’s how it is then… I understand. There’s just no place left in the modern world for 300+ year old male career politicians anymore… I’m such a dumb baka chud, learned that one from the internets by the way... *Politics slowly walks out the door, getting one last glimpse of you before leaving forever…*"
+            }
+        ]
+    }
+}
