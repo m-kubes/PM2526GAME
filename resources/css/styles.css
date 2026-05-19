@@ -44,7 +44,11 @@
     border: var(--dialogue-border-color) var(--dialogue-portrait-border-size) solid;
     background-color: var(--dialogue-image-background-color);
 }
+.dialogue_box.player_response .portrait img{
+    display: none;
+}
 .dialogue_box .portrait img {
+    display: block;
     height: 100%;
     width: 100%;
     object-fit: cover;

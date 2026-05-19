@@ -117,6 +117,7 @@ SceneManager.add_scene(new Scene("Customer Interaction", async () => {
             const random_dialogue_num = Math.floor(Math.random() * 3) + 1;
             const dialogue_name = character_name + random_dialogue_num
             dialogue = dialogue_manager.get_dialogue(dialogue_name);
+            dialogue = dialogue_manager.get_dialogue('forwolk_q_splont1')
         }
 
         moving_character.hide();

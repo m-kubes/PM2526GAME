@@ -5,7 +5,7 @@ const template_dialogue_box = document.getElementsByClassName('dialogue_box')[0]
 
 // every added dialogue json needs to be in here
 const dialogue_list = [
-    "yahu_intro_dialogue.json",
+    "benjamin_netanyahu_Intro.json",
     "john_b_politics2.json",
     "john_b_politics1.json",
     "forwolk_q_splont_proposal.json",
@@ -142,11 +142,18 @@ class Dialogue {
     }
 
     // returns a promise that resolves when the text reveal is finished
-    reveal_text(new_text, text_speed = 30, response_options = [], end_delay = 1000) {
+    reveal_text(new_text, text_speed = 30, response_options = [], end_delay = 1000, is_player_response = false) {
         return new Promise((resolve) => {
             // uses a setInterval to reveal the text one dialogue at a time
             const text_box = this._dialogue_box.querySelector(".text");
-            
+            const name_box = this._dialogue_box.querySelector(".name");
+            const old_name_box_content = name_box.textContent;
+
+            if (is_player_response) {
+                this._dialogue_box.classList.add("player_response");
+                name_box.textContent = "You";
+            }
+
             // reset text box only if there is text to reveal
             if (new_text !== "") {
                 text_box.textContent = "";
@@ -170,6 +177,8 @@ class Dialogue {
                             if (this._is_debug) {
                                 console.log("text reveal resolved with no options");
                             }
+                            text_box.textContent = old_name_box_content;
+                            this._dialogue_box.classList.remove("player_response");
                             resolve();
                         }, end_delay);
                     } else {
@@ -200,6 +209,9 @@ class Dialogue {
                                         this._dialogue_box.offsetHeight; // forces reflow so the animation works
                                         this._options_menu.classList.remove("active");
                                     });
+                                    
+                                    text_box.textContent = old_name_box_content;
+                                    this._dialogue_box.classList.remove("player_response");
                                     resolve(i);
 
                                     // delete all other dialogue options
@@ -253,47 +265,28 @@ class Dialogue {
 
                 // determine end_delay
                 let end_delay = dialogue.options ? 0 : 1000
+                let choice;
 
                 // show prompt if there is one
                 if (dialogue.prompt) {
                     // if there are options, we want to show them immediately after the text is done
                     // so we set end_delay to 0
-                    const choice = await this.reveal_text(dialogue.prompt, text_speed, dialogue_options, end_delay);
-
-                    // if there were options and there is a response for the chosen option, show it
-                    if (choice !== undefined && dialogue.options[choice].response) {
-                        await this.reveal_text(dialogue.options[choice].response, text_speed, [], 1000); 
-                    }
-
-                    // if there are stats impacts for the chosen option, update stats accordingly
-                    if (choice !== undefined && dialogue.options[choice].stats_impact) {
-                        let keys = Object.keys(dialogue.options[choice].stats_impact);
-                        let values = Object.values(dialogue.options[choice].stats_impact);
-
-                        keys.forEach(stat => {
-                            // updates stats based on the stats_impact object in the dialogue json for that option
-                            stats[stat].value = stats[stat].value + values[keys.indexOf(stat)];
-                        });
-                    }
-
-                    // if there are character love impacts for the chosen option, update character love accordingly
-                    if (choice !== undefined && dialogue.options[choice].character_love_impact) {
-                        let keys = Object.keys(dialogue.options[choice].character_love_impact);
-                        let values = Object.values(dialogue.options[choice].character_love_impact);
-
-                        keys.forEach(character => {
-                            // updates character love based on the character_love_impact object in the dialogue json for that option
-                            character_container.get_character(character).love = character_container.get_character(character).love + values[keys.indexOf(character)];
-                        });
-                    }
+                    choice = await this.reveal_text(dialogue.prompt, text_speed, dialogue_options, end_delay);
                 } 
                 // if there is no prompt but there are options, we still want to show the options menu
                 // so we call reveal_text with an empty string for the text
                 else if (dialogue.options) {
-                    const choice = await this.reveal_text("", text_speed, dialogue_options, 0);
+                    choice = await this.reveal_text("", text_speed, dialogue_options, 0);
+                }
+                
+                if (choice !== undefined) {
+                    // if there is an extended response, show that
+                    if (dialogue.options[choice].extended_response) {
+                        await this.reveal_text(dialogue.options[choice].extended_response, text_speed, [], 1500, true);
+                    }
 
                     // if there is a response for the chosen option, show it
-                    if (dialogue.options[choice].response) {
+                    if (choice !== undefined && dialogue.options[choice].response) {
                         await this.reveal_text(dialogue.options[choice].response, text_speed, [], 1000);
                     }
 
