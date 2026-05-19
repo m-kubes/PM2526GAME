@@ -14,10 +14,12 @@ export default class MovingCharacter {
 
     show() {
         this.div.style.display = "block";
+        this.div.offsetHeight;
     }
 
     hide() {
         this.div.style.display = "none";
+        this.div.offsetHeight;
     }
 
     set_position(x, y) {

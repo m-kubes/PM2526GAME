@@ -4,5 +4,5 @@
     "difficulty": "6",
     "race": "Vaguely human",
     "gender": "Male",
-    "image": ""
+    "image": "./resources/images/character_images/bart_simpson.png"
 }

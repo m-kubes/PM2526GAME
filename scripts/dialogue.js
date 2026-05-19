@@ -124,18 +124,21 @@ class Dialogue {
 
     // not a promise cuz theres really no need for it
     hide(delay = 0) {
-        // animates box sliding back down to bottom
-        setTimeout(() => {
-            if (this._is_debug) {
-                console.log("hiding dialogue box");
-            }
-            this._dialogue_box.classList.remove("active");
-
-            // timeout to hide the box after the animation finishes
+        return new Promise((resolve) => {
+            // animates box sliding back down to bottom
             setTimeout(() => {
-                this._dialogue_box.style.display = "none";
-            }, 1000);
-        }, delay);
+                if (this._is_debug) {
+                    console.log("hiding dialogue box");
+                }
+                this._dialogue_box.classList.remove("active");
+
+                // timeout to hide the box after the animation finishes
+                setTimeout(() => {
+                    this._dialogue_box.style.display = "none";
+                    resolve();
+                }, 1000);
+            }, delay);
+        });
     }
 
     // returns a promise that resolves when the text reveal is finished
@@ -259,7 +262,7 @@ class Dialogue {
 
                     // if there were options and there is a response for the chosen option, show it
                     if (choice !== undefined && dialogue.options[choice].response) {
-                        await this.reveal_text(dialogue.options[choice].response, text_speed, [], 0); 
+                        await this.reveal_text(dialogue.options[choice].response, text_speed, [], 1000); 
                     }
 
                     // if there are stats impacts for the chosen option, update stats accordingly
@@ -326,9 +329,7 @@ class Dialogue {
                 console.log(this._name + ": conversation ended");
             }
         });
-    }
-
-    
+    }   
 }
 
 export {

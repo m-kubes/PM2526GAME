@@ -26,16 +26,9 @@ async () => {
     // everything in here runs behind the fade
     // acts as a loading screen
     await SceneTools.transition_fade(1000, 500, () => {
-        document.body.style.backgroundImage = "url('./resources/images/office.jpg')";
-        document.body.style.backgroundSize = "cover";
         document.styleSheets[0].insertRule('.menu_circle { display: none; }', 0);
-        document.styleSheets[0].insertRule('.dust_circle { display: block; }', 0);
         document.querySelector('.linear_effect').style.display = 'none'
         document.getElementById('line_effect').style.display = 'none'
-
-        // set a timeout to fade in the light rays after 1 second
-        const light_rays = document.querySelector('.light-rays');
-        light_rays.classList.add('active')
     })
 }));
 
@@ -46,8 +39,16 @@ SceneManager.add_scene(new Scene("Yahu Intro", async () => {
     const yahu_intro_dialogue = dialogue_manager.get_dialogue("yahu_intro_dialogue");
     const yahu_moving_character = benjamin_netanyahu.moving_character;
 
-    // align with main menu fade
-    await SceneTools.transition_fade(1000, 500);
+    // everything in here runs behind the fade
+    // acts as a loading screen
+    await SceneTools.transition_fade(1000, 500, () => {
+        document.body.style.backgroundImage = "url('./resources/images/office.jpg')";
+        document.styleSheets[0].insertRule('.dust_circle { display: block; }', 0);
+        document.body.style.backgroundSize = "cover";
+        // set a timeout to fade in the light rays after 1 second
+        const light_rays = document.querySelector('.light-rays');
+        light_rays.classList.add('active')
+    });
 
     // set up the moving character and dialogue box for the intro scene
     yahu_moving_character.set_position('-100%', 'calc(40vh - 50%)');
@@ -106,13 +107,27 @@ SceneManager.add_scene(new Scene("Potion Selling", async () => {
 
 
 SceneManager.add_scene(new Scene("Customer Interaction", async () => {
-    const [character, character_name] = character_container.get_random_character_with_name();
-    const dialogue_box = dialogue_manager.get_character(character.name);
+    for (let i = 0; i < 3; i++) {
+        const [character, character_name] = character_container.get_random_character_with_name();
+        const dialogue_box = dialogue_manager.get_character(character_name);
+        const moving_character = character.moving_character;
 
-    const random_dialogue_num = Math.floor(Math.random() * 3) + 1; // assuming there are 3 dialogues for each character
-    const dialogue_name = character_name + random_dialogue_num
-    console.log(character)
-    console.log(dialogue_name)
-    const dialogue = dialogue_manager.get_dialogue(dialogue_name);
-    console.log(dialogue)
+        let dialogue;
+        while(!dialogue) { // keep trying to get a dialogue for the character until one is found (some characters may not have dialogues)
+            const random_dialogue_num = Math.floor(Math.random() * 3) + 1;
+            const dialogue_name = character_name + random_dialogue_num
+            dialogue = dialogue_manager.get_dialogue(dialogue_name);
+        }
+
+        moving_character.hide();
+        moving_character.set_size('50vh', '50vh');
+        moving_character.set_position('-100%', 'calc(40vh - 50%)');
+        moving_character.show();
+        await moving_character.move_to('calc(50vw - 50%)', 'calc(40vh - 50%)', 2000);
+        await dialogue_box.conversation(dialogue);
+        await moving_character.move_to('100vw', 'calc(40vh - 50%)', 2000);
+        moving_character.hide();
+    }
+
+    SceneManager.change_scene(SceneManager.get_scene("Game Over"));
 }))

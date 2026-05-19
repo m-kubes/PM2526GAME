@@ -37,7 +37,6 @@ class CharacterContainer {
 
     get_random_character_with_name(exclude_netanyahu = true) {
         const character_names = exclude_netanyahu ? Object.keys(this._characters).slice(1) : Object.keys(this._characters);
-        console.log(character_names)
         const random_index = Math.floor(Math.random() * character_names.length);
         return [this._characters[character_names[random_index]], character_names[random_index]];
     }
