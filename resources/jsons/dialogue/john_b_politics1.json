@@ -7,19 +7,45 @@
         "options": [
             {
                 "text": "I don’t like people from your party…",
-                "response": "Excuse me? That violates section B502 of the Millard Fillmore clause of the SBIDTWSDBOPIIYGWIS (So Basically I Don’t Think We Should Discriminate Based On Party Identification If You Get What I’m Saying) act of 1736! I WILL be sending my lawyers."
+                "playertext": " Uh… Sorry, but I’m from the Gleek Party, and you’re a traitorous Glupshittocrat, get out of here before I take matters into my own hands.",
+                "response": "Excuse me? That violates section B502 of the Millard Fillmore clause of the SBIDTWSDBOPIIYGWIS (So Basically I Don’t Think We Should Discriminate Based On Party Identification If You Get What I’m Saying) act of 1736! I WILL be sending my lawyers.",
+                "stats_impact": {
+                    "gambling_anxiety": -3
+                },
+                "character_love_impact": {
+                    "john_b_politics": -15
+                }
             },
             {
                 "text": "Dunno who you are but ok",
-                "response": "Oh, you haven’t heard about ME?! I’ll have you know that I negotiated the Treaty of Sweets and Candy between these two kids who were fighting over a lollipop on a playground in 1896! But fine, I’ll be generous and buy from you anyways."
+                "response": "Oh, you haven’t heard about ME?! I’ll have you know that I negotiated the Treaty of Sweets and Candy between these two kids who were fighting over a lollipop on a playground in 1896! But fine, I’ll be generous and buy from you anyways.",
+                "stats_impact": {
+                    "gambling_anxiety": -1
+                },
+                "character_love_impact": {
+                    "john_b_politics": -8
+                }
             },
             {
-                "text": "*Glaze him*",
-                "response": "Oh, I’m sincerely flattered, I guess I am pretty admirable when it boils down to it, ignoring the stock fraud, destruction of Earth, lobbing that tomato at my ex-wife’s face which caused her to fall into the lake and drown. But we’re all human, are we not? Oh, uh, no, I guess we aren’t actually, there’s a lot of non-human species here…"
+                "text": "*Glaze him and give the potion*",
+                "playertext": " O-oh! Yes of course Mr. Politics! You’re a really admirable patriot and I’ll whip you up a real good potion sir!",
+                "response": "Oh, I’m sincerely flattered, I guess I am pretty admirable when it boils down to it, ignoring the stock fraud, destruction of Earth, lobbing that tomato at my ex-wife’s face which caused her to fall into the lake and drown. But we’re all human, are we not? Oh, uh, no, I guess we aren’t actually, there’s a lot of non-human species here…",
+                "stats_impact": {
+                    "gambling_anxiety": 1
+                },
+                "character_love_impact": {
+                    "john_b_politics": 8
+                }
             },
             {
                 "text":"Sure! You have my vote now!",
-                "response": "Oh, so you don’t think it made sense for me to take your vote for granted before? After all the work I’ve done for your district? You know, I’m a really great person, I don’t know why you’d think I’m not, I thought it was obvious, jeez. You people genuinely make my blood boil, you’re the real threat to our nation's wellbeing."
+                "response": "Oh, so you don’t think it made sense for me to take your vote for granted before? After all the work I’ve done for your district? You know, I’m a really great person, I don’t know why you’d think I’m not, I thought it was obvious, jeez. You people genuinely make my blood boil, you’re the real threat to our nation's wellbeing.",
+                "stats_impact": {
+                    "gambling_anxiety": -1
+                },
+                "character_love_impact": {
+                    "john_b_politics": -10
+                }
             }
         ]
     }
